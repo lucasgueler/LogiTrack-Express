@@ -30,6 +30,7 @@ graph TD
     W1 -.->|Eleição de Líder| W2
     W1 -->|Persistência e Exclusão Mútua| DB[(PostgreSQL)]
     W2 -->|Persistência e Exclusão Mútua| DB
+```
 
 ## 🚀 Guia de Execução Local
 
