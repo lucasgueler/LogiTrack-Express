@@ -21,6 +21,7 @@ O sistema implementa o padrão "A Metrópole Resiliente", contendo as seguintes 
 3. **Workers Replicados:** Consumidores concorrentes com sincronização via Relógio Lógico de Lamport e eleição de líder (Bully).
 4. **Persistência (PostgreSQL):** Banco de dados relacional garantindo exclusão mútua distribuída.
 
+```mermaid
 graph TD
     Client["Cliente / Simulador (Caminhão)"] -->|gRPC / Porta 50051| Gateway["Gateway / Ponto de Entrada"]
     Gateway -->|Publicação de Eventos| Kafka["Apache Kafka (Fila de Mensagens)"]
